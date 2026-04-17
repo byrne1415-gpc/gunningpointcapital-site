@@ -1,3 +1,0 @@
-# Single-page navigation: any unknown path falls back to index.html
-# so the in-app nav (Home / About / Contact) keeps working on refresh.
-/*    /index.html   200
