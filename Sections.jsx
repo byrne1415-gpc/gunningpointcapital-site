@@ -75,7 +75,6 @@ function ContactSection({ onSubmit, submitted }) {
             <p>Whether you're a broker with a qualified deal, a limited partner exploring an allocation, or a community member with a question about a project, we would like to hear from you.</p>
             <div className="gpc-contact-meta">
               <div><h5>Office</h5><p className="gpc-contact-muted">Greater Boston, Massachusetts</p></div>
-              <div><h5>Email</h5><p className="gpc-contact-muted"><a href="mailto:joe@gunningpointcapital.com" style={{color:'inherit'}}>joe@gunningpointcapital.com</a></p></div>
             </div>
           </div>
           <form className="gpc-form" onSubmit={submit}>
