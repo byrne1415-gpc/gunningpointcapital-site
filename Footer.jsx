@@ -10,7 +10,7 @@ function Footer() {
         <div className="gpc-footer-cols">
           <div><h5>Firm</h5><a>About</a><a>Approach</a><a>Team</a></div>
           <div><h5>Project</h5><a>In development</a></div>
-          <div><h5>Contact</h5><a>Greater Boston</a><a href="mailto:joe@gunningpointcapital.com">joe@gunningpointcapital.com</a></div>
+          <div><h5>Contact</h5><a>Greater Boston</a></div>
         </div>
       </div>
       <div className="gpc-footer-copy">© 2026 Gunning Point Capital LLC · All rights reserved</div>
