@@ -1,0 +1,243 @@
+/* ============================================================
+   Gunning Point Capital — Colors & Type
+   ------------------------------------------------------------
+   The brand centers on a single deep navy wordmark on white,
+   with classical letterform styling. The palette extends that
+   restrained identity with warm neutrals and a subtle stone/
+   parchment background range that evokes architectural drawings
+   and deeded property — fitting for a Boston-area real estate
+   acquisition & development firm.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* ---------- Brand colors ---------- */
+  --gpc-navy-900:   #0E1E33;   /* deepest — used sparingly */
+  --gpc-navy-800:   #132A47;   /* logo / primary wordmark */
+  --gpc-navy-700:   #1C3557;   /* primary ink */
+  --gpc-navy-600:   #2A4670;   /* secondary navy */
+  --gpc-navy-500:   #4A6A93;   /* tertiary, links-on-white */
+  --gpc-navy-300:   #8EA3BE;   /* muted navy */
+  --gpc-navy-100:   #D6DEEA;   /* navy tint (rules, hairlines on light) */
+  --gpc-navy-50:    #EEF2F8;   /* near-white navy wash */
+
+  /* ---------- Warm neutrals (parchment / stone) ---------- */
+  --gpc-stone-900:  #1A1613;
+  --gpc-stone-700:  #3B342C;
+  --gpc-stone-500:  #6B6055;
+  --gpc-stone-300:  #B7AE9F;
+  --gpc-stone-200:  #D9D2C4;
+  --gpc-stone-100:  #EBE5D8;
+  --gpc-stone-50:   #F5F1E8;   /* primary warm background */
+  --gpc-paper:      #FAF7EF;   /* parchment — page background alt */
+  --gpc-white:      #FFFFFF;
+
+  /* ---------- Accent ---------- */
+  --gpc-brass-600:  #8A6A2E;   /* deed/brass — property plaques */
+  --gpc-brass-500:  #A9863E;
+  --gpc-brass-400:  #C2A25A;
+  --gpc-brass-100:  #EFE3C5;
+
+  /* ---------- Semantic ---------- */
+  --gpc-success:    #3E6B4A;
+  --gpc-warning:    #A9863E;
+  --gpc-danger:     #8C2F2B;
+  --gpc-info:       #2A4670;
+
+  /* ---------- Foreground / background roles ---------- */
+  --fg-1:   var(--gpc-navy-800);    /* headings, wordmark */
+  --fg-2:   var(--gpc-stone-700);   /* body copy */
+  --fg-3:   var(--gpc-stone-500);   /* captions, meta */
+  --fg-inv: var(--gpc-white);
+
+  --bg-1:   var(--gpc-white);        /* primary surface */
+  --bg-2:   var(--gpc-stone-50);     /* warm page */
+  --bg-3:   var(--gpc-stone-100);    /* subtle card */
+  --bg-inv: var(--gpc-navy-800);     /* dark hero */
+
+  --rule:   var(--gpc-navy-100);
+  --rule-strong: var(--gpc-navy-300);
+  --rule-warm: var(--gpc-stone-200);
+
+  /* ---------- Type families ---------- */
+  /* SUBSTITUTION FLAG: logo appears set in a classical wide-cap
+     serif (likely Trajan Pro / Optima-adjacent). We substitute
+     Cormorant Garamond as the Google-available match. Please
+     provide licensed brand font files if available. */
+  --font-display: 'Cormorant Garamond', 'Cormorant', 'Trajan Pro', 'Optima', Georgia, serif;
+  --font-sans:    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+  --font-mono:    ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+
+  /* ---------- Type scale (fluid-ready) ---------- */
+  --fs-display-1: 72px;   /* hero */
+  --fs-display-2: 56px;
+  --fs-h1:        44px;
+  --fs-h2:        34px;
+  --fs-h3:        26px;
+  --fs-h4:        20px;
+  --fs-eyebrow:   12px;   /* UPPERCASE tracked */
+  --fs-body:      17px;
+  --fs-body-lg:   19px;
+  --fs-small:     15px;
+  --fs-caption:   13px;
+
+  /* ---------- Tracking ---------- */
+  --tr-eyebrow: 0.22em;
+  --tr-wordmark: 0.14em;
+  --tr-caps-tight: 0.04em;
+
+  /* ---------- Spacing (8pt base, with 4/12 stops) ---------- */
+  --sp-1:  4px;
+  --sp-2:  8px;
+  --sp-3:  12px;
+  --sp-4:  16px;
+  --sp-5:  24px;
+  --sp-6:  32px;
+  --sp-7:  48px;
+  --sp-8:  64px;
+  --sp-9:  96px;
+  --sp-10: 128px;
+
+  /* ---------- Radii (mostly squared — architectural) ---------- */
+  --r-0: 0;
+  --r-1: 2px;
+  --r-2: 4px;
+  --r-3: 8px;
+  --r-pill: 999px;
+
+  /* ---------- Shadows (restrained, deed-like) ---------- */
+  --sh-0: none;
+  --sh-1: 0 1px 0 rgba(19, 42, 71, 0.06), 0 1px 2px rgba(19, 42, 71, 0.04);
+  --sh-2: 0 2px 4px rgba(19, 42, 71, 0.06), 0 4px 12px rgba(19, 42, 71, 0.06);
+  --sh-3: 0 8px 24px rgba(19, 42, 71, 0.10);
+  --sh-inset-rule: inset 0 -1px 0 var(--rule);
+
+  /* ---------- Motion ---------- */
+  --ease-standard: cubic-bezier(0.2, 0.0, 0.2, 1);
+  --ease-entrance: cubic-bezier(0.0, 0.0, 0.2, 1);
+  --ease-exit:     cubic-bezier(0.4, 0.0, 1, 1);
+  --dur-fast:  160ms;
+  --dur-base:  240ms;
+  --dur-slow:  420ms;
+
+  /* ---------- Max widths ---------- */
+  --mw-prose: 66ch;
+  --mw-page:  1200px;
+  --mw-narrow: 880px;
+}
+
+/* ============================================================
+   Semantic element defaults
+   ============================================================ */
+
+html, body {
+  background: var(--bg-1);
+  color: var(--fg-2);
+  font-family: var(--font-sans);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.wordmark {
+  font-family: var(--font-display);
+  font-weight: 500;
+  letter-spacing: var(--tr-wordmark);
+  text-transform: uppercase;
+  color: var(--fg-1);
+}
+
+.eyebrow {
+  font-family: var(--font-sans);
+  font-size: var(--fs-eyebrow);
+  font-weight: 600;
+  letter-spacing: var(--tr-eyebrow);
+  text-transform: uppercase;
+  color: var(--fg-3);
+}
+
+h1, .h1 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: var(--fs-h1);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: var(--fg-1);
+  margin: 0 0 var(--sp-4);
+}
+
+h2, .h2 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: var(--fs-h2);
+  line-height: 1.15;
+  letter-spacing: -0.005em;
+  color: var(--fg-1);
+  margin: 0 0 var(--sp-4);
+}
+
+h3, .h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: var(--fs-h3);
+  line-height: 1.25;
+  color: var(--fg-1);
+  margin: 0 0 var(--sp-3);
+}
+
+h4, .h4 {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: var(--fs-h4);
+  line-height: 1.3;
+  letter-spacing: var(--tr-caps-tight);
+  text-transform: uppercase;
+  color: var(--fg-1);
+  margin: 0 0 var(--sp-3);
+}
+
+p, .p {
+  font-size: var(--fs-body);
+  line-height: 1.65;
+  color: var(--fg-2);
+  margin: 0 0 var(--sp-4);
+  max-width: var(--mw-prose);
+  text-wrap: pretty;
+}
+
+.lead {
+  font-size: var(--fs-body-lg);
+  line-height: 1.55;
+  color: var(--fg-2);
+}
+
+small, .caption {
+  font-size: var(--fs-caption);
+  color: var(--fg-3);
+}
+
+a {
+  color: var(--gpc-navy-600);
+  text-decoration: none;
+  border-bottom: 1px solid var(--gpc-navy-300);
+  transition: color var(--dur-fast) var(--ease-standard),
+              border-color var(--dur-fast) var(--ease-standard);
+}
+
+a:hover {
+  color: var(--gpc-navy-800);
+  border-bottom-color: var(--gpc-navy-700);
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--rule);
+  margin: var(--sp-6) 0;
+}
+
+code, pre, .mono {
+  font-family: var(--font-mono);
+  font-size: 0.92em;
+}
