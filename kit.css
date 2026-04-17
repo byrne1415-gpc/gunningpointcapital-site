@@ -65,12 +65,24 @@
   border-bottom: 1px solid var(--rule);
 }.gpc-wm {
   background: none; border: 0; padding: 0; cursor: pointer;
-  font-family: var(--font-display); font-weight: 500;
-  letter-spacing: 0.14em; text-transform: uppercase;
+  font-family: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+  font-weight: 500;
   color: var(--gpc-navy-800); text-align: left; line-height: 1;
 }
-.gpc-wm-top { display: block; font-size: 19px; white-space: nowrap; }
-.gpc-wm-bot { display: block; font-size: 12px; letter-spacing: 0.22em; margin-top: 4px; white-space: nowrap; }
+.gpc-wm-top {
+  display: block;
+  font-size: 18px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.gpc-wm-bot {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
 .gpc-wm--light { color: #fff; }
 .gpc-nav-links { display: flex; gap: 36px; margin-left: auto; }
 .gpc-nav-link {
