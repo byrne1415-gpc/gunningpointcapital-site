@@ -85,6 +85,18 @@
   white-space: nowrap;
 }
 .gpc-wm--light { color: #fff; }
+
+/* Image-based wordmark (used in Nav + Footer) */
+.gpc-wm-btn {
+  background: none; border: 0; padding: 0; cursor: pointer;
+  display: inline-flex; align-items: center;
+}
+.gpc-wm-img {
+  display: block;
+  height: 44px;
+  width: auto;
+}
+.gpc-wm-img--light { filter: brightness(0) invert(1); }
 .gpc-nav-links { display: flex; gap: 36px; margin-left: auto; }
 .gpc-nav-link {
   background: none; border: 0; padding: 6px 0; cursor: pointer;

@@ -1,17 +1,30 @@
-# Site updates — April 2026
+# Site updates v2 — real logo image
 
-Drop these 3 files into your GitHub repo, overwriting the existing ones at the **root of the repo** (same level as `index.html`).
+Upload ALL files to your GitHub repo, keeping the folder structure:
 
-## How to upload in GitHub web UI
+```
+repo-root/
+├── Nav.jsx           ← overwrites existing
+├── Footer.jsx        ← overwrites existing
+├── kit.css           ← overwrites existing
+└── assets/
+    └── logo-header.png   ← overwrites existing
+```
 
-1. Go to your `gunningpointcapital-site` repo.
-2. For each file below, click the existing file in the repo, click the **pencil icon** (top-right), then select-all and paste in the new contents. Commit.
-   - **Alternate:** click **Add file → Upload files** and drag all three in at once. GitHub will overwrite the existing files with the same names. Commit.
-3. Cloudflare Pages auto-deploys in 30–60 seconds.
-4. Hard-refresh your live site (Cmd+Shift+R / Ctrl+Shift+R).
+## Upload method (GitHub web UI)
 
-## What changed
+1. Go to your repo root.
+2. **Add file → Upload files**.
+3. Drag in `Nav.jsx`, `Footer.jsx`, `kit.css`.
+4. Commit.
+5. Click into the `assets/` folder.
+6. **Add file → Upload files** → drag in `logo-header.png` from the `assets/` subfolder of this download.
+7. Commit.
+8. Wait 60 seconds for Cloudflare to deploy.
+9. **Hard refresh** your site: Cmd+Shift+R (Mac) or Ctrl+F5 (Windows). Or open in an incognito window.
 
-- **`Footer.jsx`** — removed the `joe@gunningpointcapital.com` line from the footer. Contact inquiries still route to that email via the Contact page form.
-- **`colors_and_type.css`** — added Montserrat to the Google Fonts import.
-- **`kit.css`** — restyled the `.gpc-wm` wordmark to use Montserrat 500 with the exact tracking of the cleaned-up logo.
+## What this does
+
+- Nav and footer now display the actual cleaned-up logo PNG image (matches `preview/logos.html` exactly).
+- Footer no longer shows the email address.
+- Contact form still routes to joe@gunningpointcapital.com (unchanged).

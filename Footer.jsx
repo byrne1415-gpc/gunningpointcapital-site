@@ -3,10 +3,7 @@ function Footer() {
   return (
     <footer className="gpc-footer">
       <div className="gpc-footer-inner">
-        <div className="gpc-wm gpc-wm--light">
-          <span className="gpc-wm-top">Gunning Point</span>
-          <span className="gpc-wm-bot">Capital</span>
-        </div>
+        <img src="assets/logo-header.png" alt="Gunning Point Capital" className="gpc-wm-img gpc-wm-img--light" />
         <div className="gpc-footer-cols">
           <div><h5>Firm</h5><a>About</a><a>Approach</a><a>Team</a></div>
           <div><h5>Project</h5><a>In development</a></div>
