@@ -82,6 +82,7 @@
   letter-spacing: 0.32em;
   text-transform: uppercase;
   margin-top: 5px;
+  white-space: nowrap;
 }
 .gpc-wm--light { color: #fff; }
 .gpc-nav-links { display: flex; gap: 36px; margin-left: auto; }
