@@ -1,30 +1,23 @@
-# Site updates v2 — real logo image
+# Site update v4 — mobile responsive
 
-Upload ALL files to your GitHub repo, keeping the folder structure:
+## What's new
+- Nav collapses to a hamburger menu on phones
+- Hero text shrinks so it fits phone screens
+- Two-column sections (About, Contact, Pillars, Project) stack to single column
+- Footer columns stack neatly
+- Padding tightens on small screens
 
-```
-repo-root/
-├── Nav.jsx           ← overwrites existing
-├── Footer.jsx        ← overwrites existing
-├── kit.css           ← overwrites existing
-└── assets/
-    └── logo-header.png   ← overwrites existing
-```
+## How to install
+Upload both files to your GitHub repo root, overwriting the existing ones:
+- `Nav.jsx`
+- `kit.css`
 
-## Upload method (GitHub web UI)
+**Steps:**
+1. Go to your repo root in GitHub.
+2. **Add file → Upload files** → drag in both files → Commit.
+3. Cloudflare auto-deploys in ~60 seconds.
+4. Hard-refresh your site (Cmd+Shift+R) on desktop AND phone.
 
-1. Go to your repo root.
-2. **Add file → Upload files**.
-3. Drag in `Nav.jsx`, `Footer.jsx`, `kit.css`.
-4. Commit.
-5. Click into the `assets/` folder.
-6. **Add file → Upload files** → drag in `logo-header.png` from the `assets/` subfolder of this download.
-7. Commit.
-8. Wait 60 seconds for Cloudflare to deploy.
-9. **Hard refresh** your site: Cmd+Shift+R (Mac) or Ctrl+F5 (Windows). Or open in an incognito window.
-
-## What this does
-
-- Nav and footer now display the actual cleaned-up logo PNG image (matches `preview/logos.html` exactly).
-- Footer no longer shows the email address.
-- Contact form still routes to joe@gunningpointcapital.com (unchanged).
+## Test it
+- Phone: open the site, the menu button appears top-right, tap it to reveal links.
+- Desktop: should look identical to before — hamburger only appears below 640px wide.
